@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pixel Art</title>
+  </head>
+  <body>
+    <h1 id="real-title"><span>Pixel</span> Art</h1>
+    <h1 id="title">Pixel Art</h1>
+
+    <div id="color-palette"></div>
+
+    <div id="menu">
+      <div class="row">
+        <button id="clear-board">x Limpar Tudo</button>
+        <button id="toggle-grid"># Grid</button>
+      </div>
+      <div class="row">
+        <input
+          type="number"
+          id="board-size"
+          min="1"
+          max="50"
+          placeholder="Qtd. de pixels base"
+        />
+        <input
+          type="number"
+          id="pixel-density"
+          min="1"
+          placeholder="Densidade de pixels"
+        />
+        <button id="generate-board">VQV ></button>
+      </div>
+    </div>
+
+    <div class="row displays">
+      <div class="basis-40">
+        Qtd. de pixels base: <span id="pixelAmtDisplay"></span>
+      </div>
+      <div class="basis-40">
+        Densidade de pixels: <span id="pixelDensityDisplay"></span>
+      </div>
+      <div class="basis-20"></div>
+    </div>
+
+    <div class="displays instructions">Btn esquerdo = + / Btn direito = -</div>
+
+    <div id="pixel-board"></div>
+
+    <script src="pen.js"></script>
+    <script src="pixel.js"></script>
+    <script src="pixels.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
